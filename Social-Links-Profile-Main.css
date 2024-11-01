@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    /* COLORS */
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+    --Green: hsl(75, 94%, 57%);
+
+    /* FONT-WEIGHT */
+    --FONT-WEIGHT-1: 400;
+    --FONT-WEIGHT-2: 600;
+    --FONT-WEIGHT-3: 700;
+
+    --MARGIN: 30px;
+ }
+
+ body {
+    background-color: var(--Off-Black);
+    color: var(--White);
+    font-family: 'Inter';
+    font-size: 14px;
+    min-height: 100vh;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: var(--Dark-Grey);
+    border-radius: 15px;
+    white-space: nowrap;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec1 {
+    padding: 30px;
+}
+
+.imgDiv {
+    width: 40%;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.sec1Div {
+    line-height: 30px;
+    font-weight: var(--FONT-WEIGHT-1);
+    margin: 30px 0px;
+}
+
+.sec1Div > h1 {
+    font-size: 23px;
+}
+
+.sec1Div > p {
+    color: var(--Green);
+}
+
+.sec2 {
+    gap: 12px;
+    padding: 0px 25px 25px;
+}
+
+button {
+    background-color: var(--Grey);
+    color: var(--White);
+    font-weight: var(--FONT-WEIGHT-3);
+    display: block;
+    min-width: 280px;
+    border: none;
+    border-radius: 7px;
+    padding: 15px 0px;
+}
+
+button:hover {
+    background-color: var(--Green);
+    color: var(--Off-Black);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 375px) {
+    button {
+        min-width: 300px;
+    }
+    .sec1 {
+        padding-top: 40px;
+    }
+    .sec2 {
+        padding: 0px 40px 35px;
+    }
+}
